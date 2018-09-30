@@ -50,5 +50,11 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 # Files Functionality
 
 ## app.js functionality
+## style.css functionality
+### menu-hidden uses transform to keep the menu off screen to the left, translate3d specifies where it should move once the eventlistener (onClick) is activated 
 
-### feed
+## feedreader.js functionality
+### RSS Feeds test suite
+are defined : test that the rss feed object in app.js is defined with properties with string lengths longer than zero indicating they actually exist
+url is defined and not empty: loops through each feed supplied to check they have a url and the string is longer than zero characters
+name is defined and not empty: loops throug each feed supplied to check that they are named and the string is longer that 0 characters
