@@ -39,6 +39,7 @@ function init() {
  * index position within the allFeeds array.
  * This function all supports a callback as the second parameter
  * which will be called after everything has run successfully.
+ https://is.gd/kJKs0W (ajax.jquery documentation)
  */
  function loadFeed(id, cb) {
      var feedUrl = allFeeds[id].url,

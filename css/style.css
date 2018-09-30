@@ -57,7 +57,7 @@ h2 {
     height: 100%;
     width: 10em;
     transform: translate3d(0, 0, 0);
-    transition: transform 0.2s;
+    transition: transform 0.5s;
 }
 
 .slide-menu ul {
