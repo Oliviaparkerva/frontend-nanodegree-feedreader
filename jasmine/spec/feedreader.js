@@ -67,25 +67,42 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
         it('should toggle between hidden and visible when the icon is clicked', function(){
-            $('menuIcon').on('click', function() {
+            $('.menu-icon-link').click(); 
+                expect($('body').hasClass('menu-hidden')).toBe(false);
+            $('.menu-icon-link').click(); 
                 expect($('body').hasClass('menu-hidden')).toBe(true);
-                expect($('body').hasClass('menu-hidden')).not.toBe(true);
-            });        
-        });
+        });        
     });
     /* TODO: Write a new test suite named "Initial Entries" */
-
+    describe('Initial Entries', function(){
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-
+        beforeEach(function(done){
+            loadFeed(0,done);
+        });
+        
+        it('are loaded and there is at least one feed', function(){
+            expect($('.feed .entry').length).toBeGreaterThan(0);
+        });
+    });
+      
+  
     /* TODO: Write a new test suite named "New Feed Selection" */
+    describe('New Feed Selection', function(){
+         //  TODO: Write a test that ensures when a new feed is loaded
+         // * by the loadFeed function that the content actually changes.
+         // * Remember, loadFeed() is asynchronous.
+        afterEach(function(done){
+            loadFeed(0,done);   
+        });
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+        it('loads a new feed', function(){
+            expect().
+        });
+    });
+       
 }());
