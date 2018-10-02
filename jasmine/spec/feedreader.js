@@ -92,17 +92,30 @@ $(function() {
       
   
     /* TODO: Write a new test suite named "New Feed Selection" */
-    describe('New Feed Selection', function(){
-         //  TODO: Write a test that ensures when a new feed is loaded
-         // * by the loadFeed function that the content actually changes.
-         // * Remember, loadFeed() is asynchronous.
-        afterEach(function(done){
-            loadFeed(0,done);   
+        // TODO: Write a test that ensures when a new feed is loaded
+        //     * by the loadFeed function that the content actually changes.
+        //     * Remember, loadFeed() is asynchronous.
+         
+    describe('New Feed Selection', function() {
+            //TODO: figure out how to do this using this keyword!!
+        let firstFeed,
+            secondFeed;
+
+        beforeEach(function(done) {
+            loadFeed(0, function(){
+                firstFeed = document.querySelector('h1').innerText;
+                done();
+            });
+
+            loadFeed(1, function(){
+                secondFeed = document.querySelector('h1').innerText;
+                done();
+            });
         });
 
-        it('loads a new feed', function(){
-            expect().
+        it('loads a unique feed', function(){
+            expect(firstFeed === secondFeed).toBe(false);
         });
     });
-       
+         
 }());

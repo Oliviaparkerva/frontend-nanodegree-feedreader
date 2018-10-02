@@ -31,12 +31,13 @@
 	arrow functions
 	https://is.gd/JyYaaN
 
-Jasmine links:
+#Jasmine links:
 
 	cheatsheet
 	https://devhints.io/jasmine
 	
-	describe
+	setup and teardown(before/afterEach)
+	https://is.gd/u1Crwo
 
 
 
