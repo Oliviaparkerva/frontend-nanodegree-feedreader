@@ -97,7 +97,7 @@ $(function() {
         //     * Remember, loadFeed() is asynchronous.
          
     describe('New Feed Selection', function() {
-            //TODO: figure out how to do this using this keyword!!
+            
         let firstFeed,
             secondFeed;
 
