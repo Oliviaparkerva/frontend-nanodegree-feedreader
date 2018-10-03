@@ -1,6 +1,7 @@
-#Feed Reader Testing Instructions
+# Feed Reader Testing Instructions
 
 1. Clone repository from provided link
+	https://github.com/udacity/frontend-nanodegree-feedreader
 2. Open files using text editor
 3. Open index.html in browser
 4. Test will run when page loads. See status of test by scrolling to the bottom of the page.
@@ -12,7 +13,8 @@
 	Runs the page contents pulling the feed contents from designated urls. see allFeeds array
 ## style.css functionality
 	Page styling. Menu functionality is created using CSS
-### menu-hidden uses transform to keep the menu off screen to the left, translate3d specifies where it should move once the eventlistener (onClick) is activated 
+
+	menu-hidden uses transform to keep the menu off screen to the left, translate3d specifies where it should move once the eventlistener (onClick) is activated 
 
 ## feedreader.js functionality
 ### RSS Feeds test suite 
@@ -59,10 +61,11 @@
 ## JS links:
 
 ### hasClass
-#### https://airbnb.io/enzyme/docs/api/ReactWrapper/hasClass.html ; hasClass 
+	https://is.gd/VJZT5B
 
 ### ajax.jquery
-#### https://is.gd/kJKs0W ; performs an asynchronous http request
+	https://is.gd/kJKs0W 
+	performs an asynchronous http request
 
 ### arrow functions
 	https://is.gd/JyYaaN
